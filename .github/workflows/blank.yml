@@ -30,6 +30,10 @@ jobs:
         uses: phips28/gh-action-bump-version@v9.0.1
         # env:
         #   GITHUB_TOKEN: ${{secrets.GH_SECRET}}
+        with:
+          minor-wording:  'add,Adds,new'
+          major-wording:  'MAJOR,cut-major'
+          patch-wording:  'patch,fixes'
 
       # Runs a single Hello World
       - name: Run a single Hello World script
